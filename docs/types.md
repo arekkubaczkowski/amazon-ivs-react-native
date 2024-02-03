@@ -1,4 +1,4 @@
-# Types and enums
+# TYPES AND ENUMS
 
 ## LogLevel
 
@@ -67,4 +67,10 @@ export type TextMetadataCue = {
   text: string;
   textDescription: string;
 };
+```
+
+## ResizeMode
+
+```ts
+export type ResizeMode = 'aspectFill' | 'aspectFit' | 'aspectZoom';
 ```

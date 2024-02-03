@@ -1,4 +1,4 @@
-package com.amazonivsreactnative
+package com.amazonaws.ivs.reactnative.player
 
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
@@ -52,6 +52,11 @@ class AmazonIvsViewManager : SimpleViewManager<AmazonIvsView>() {
   @ReactProp(name = "streamUrl")
   fun setStreamUrl(view: AmazonIvsView, streamUrl: String) {
     view.setStreamUrl(streamUrl);
+  }
+
+  @ReactProp(name = "resizeMode")
+  fun setResizeMode(view: AmazonIvsView, mode: String) {
+    view.setResizeMode(mode);
   }
 
   @ReactProp(name = "muted")
